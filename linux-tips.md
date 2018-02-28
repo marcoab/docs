@@ -18,6 +18,8 @@ Ubuntu by itself locks down .deb files.  We will use gdebi to install .deb files
 
 `sudo apt-get install gdebi`
 
+`sudo gdebi installFile.deb`
+
 ### Install File Compression Libraries
 
 `sudo apt-get install unace unrar zip unzip xz-utils p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract file-roller`
