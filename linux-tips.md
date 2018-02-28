@@ -125,12 +125,13 @@ The `.bashrc` file is where you can set aliases and functions to be used within 
 `sudo nano ~/.bashrc`
 
 ### Example Aliases
-`alias clr=clear`
-`alias navd=cd ~`
-`alias gm=git merge`
+* `alias clr=clear`
+* `alias navd=cd ~`
+* `alias gm=git merge`
 
 ### Example Functions
-```function() lrclean{
+```
+function() lrclean{
 rm -rf ./osgi/state/*
 rm -rf ./temp/*
 rm -rf ./work/*
