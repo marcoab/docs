@@ -98,7 +98,8 @@ Edit the default_users section:
 2) Place the following properties within the [mysqld] section.
 ```[mysqld]
 character-set-servver=utf8
-collations-server=utf8_general_ci```
+collations-server=utf8_general_ci
+```
 
 ### Install MySQL Workbench
 `sudo apt install mysql-workbench`
