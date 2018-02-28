@@ -57,7 +57,7 @@ Installing Git and Repos
 `sudo apt update && sudo apt install git xclip`
 
 ### Generate an SSH Key
-`ssh-keygen -t rsa -b 4096 -C "github@email.com"
+`ssh-keygen -t rsa -b 4096 -C "github@email.com"`
 
 ### Adding the SSH Key to Github
 `eval "$(ssh-agent -s"`
@@ -109,4 +109,30 @@ collations-server=utf8_general_ci
 * `./stop` to stop the server.
 * `./my sqldump` to call the MySQL dump command
 
+VMware Player
+----
+### Installing VMware Player
+* `sudo apt update`
+* `wget https://download3.vmware.com/software/player/file/VMware-Player-14.1.1-7528167.x86_64.bundle`
+* `chmod a+x ./VMware-Player-14.1.1-7528167.x86_64.bundle`
+* `sudo ./VMware-Player-14.1.1-7528167.x86_64.bundle`
 
+Setting Up Aliases and Functions
+----
+The `.bashrc` file is where you can set aliases and functions to be used within Linux.
+
+### Editing the File
+`sudo nano ~/.bashrc`
+
+### Example Aliases
+`alias clr=clear`
+`alias navd=cd ~`
+`alias gm=git merge`
+
+### Example Functions
+```function() lrclean{
+rm -rf ./osgi/state/*
+rm -rf ./temp/*
+rm -rf ./work/*
+}
+```
