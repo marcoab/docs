@@ -52,6 +52,9 @@ If there is presence of OpenJDK, remove it:
 2. `sudo apt-get update`
 3. `sudo apt-get install oracle-java8-installer`
 
+### Install Alternatives for easy Java Switching
+* `sudo apt install galternatives`
+
 Installing Git and Repos
 ----
 
@@ -99,7 +102,7 @@ This allows all remote connections.
 2) Place the following properties under the `[mysqld]` section.
 ```
 [mysqld]
-character-set-servver=utf8
+character-set-server=utf8
 collations-server=utf8_general_ci
 ```
 
