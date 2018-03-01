@@ -2,7 +2,7 @@ Linux Tips
 ====
 This is a collection of the commands and items that might prove useful.
 
-Remember, `apt` is designed for more of a user-friendly version of `apt-get` !
+Remember, `apt` is designed for more of a user-friendly version of `apt-get`.
 
 
 OS Setup
@@ -39,13 +39,13 @@ Java Installation
 ----
 
 ### Ensure OpenJDK is Uninstalled
-* `dpkg -l | grep openjdk`
-* `dpkg -l | grep jre`
+1. `dpkg -l | grep openjdk`
+2. `dpkg -l | grep jre`
 
 If there is presence of OpenJDK, remove it:
 
-* `sudo apt-get --purge remove openjdk*`
-* `sudo apt-get autoremove`
+1. `sudo apt-get --purge remove openjdk*`
+2. `sudo apt-get autoremove`
 
 ### Install Java 8
 1. `sudo add-apt-repository ppa:webupd8team/java`
@@ -62,9 +62,9 @@ Installing Git and Repos
 `ssh-keygen -t rsa -b 4096 -C "github@email.com"`
 
 ### Adding the SSH Key to Github
-`eval "$(ssh-agent -s"`
-`ssh-add ~/.ssh/id_rsa`
-`xclip -sel clip < ~/.ssh/id_rsa.pub`
+1. `eval "$(ssh-agent -s"`
+2. `ssh-add ~/.ssh/id_rsa`
+3. `xclip -sel clip < ~/.ssh/id_rsa.pub`
 
 ### Clone the Repo
 1) Navigate to where you want the repo.
@@ -81,11 +81,13 @@ MySQL Sandbox Installation
 2) Add in the Environment Variables:
 
 
-`export SANDBOX_HOME=/home/usernamehere/Liferay/MySQL/servers`
+* `export SANDBOX_HOME=/home/usernamehere/Liferay/MySQL/servers`
+
 (This is where the MySQL servers are installed into.)
 
 
-`export SANDBOX_BINARY=/home/usernamehere/Liferay/MySQL/tarballs`
+* `export SANDBOX_BINARY=/home/usernamehere/Liferay/MySQL/tarballs`
+
 (This is where the MySQL Installation Files go.)
 
 ### Setup MySQL Sandbox Defaults
@@ -93,12 +95,14 @@ MySQL Sandbox Installation
 Edit the default_users section:
 * `db_user = root`
 * `db_password = password`
-* `remote_access = %` This allows all remote connections.
+* `remote_access = %` 
+This allows all remote connections.
 
 ### Setup UTF-8 Compatibility
 1) Edit the `my.sandbox.cnf` file in each of the MySQL servers.
-2) Place the following properties within the [mysqld] section.
-```[mysqld]
+2) Place the following properties under the `[mysqld]` section.
+```
+[mysqld]
 character-set-servver=utf8
 collations-server=utf8_general_ci
 ```
@@ -109,7 +113,10 @@ collations-server=utf8_general_ci
 ### Using MySQL Sandbox
 * `./start` in the server folder to start up the server.
 * `./stop` to stop the server.
-* `./my sqldump` to call the MySQL dump command
+* `./my sql` calls up the MySQL prompt.
+* `./my sqldump` to call the MySQL dump command.
+
+**NOTE:** You call commands like mysqldump, etc. by just the use of something like `./my sqldump`
 
 VMware Player
 ----
