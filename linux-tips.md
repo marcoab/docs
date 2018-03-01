@@ -80,15 +80,11 @@ MySQL Sandbox Installation
 1) Edit the bash profile: `sudo nano ~/.bashrc`
 2) Add in the Environment Variables:
 
-
+(This is where the MySQL servers are installed into.)
 * `export SANDBOX_HOME=/home/usernamehere/Liferay/MySQL/servers`
 
-(This is where the MySQL servers are installed into.)
-
-
+(This is where the MySQL Installation (tar.gz) Files go.)
 * `export SANDBOX_BINARY=/home/usernamehere/Liferay/MySQL/tarballs`
-
-(This is where the MySQL Installation Files go.)
 
 ### Setup MySQL Sandbox Defaults
 `sudo nano /usr/share/perl5/MySQL/Sandbox.pm`
