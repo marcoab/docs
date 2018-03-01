@@ -103,7 +103,7 @@ This allows all remote connections.
 ```
 [mysqld]
 character-set-server=utf8
-collations-server=utf8_general_ci
+collation-server=utf8_general_ci
 ```
 
 ### Install MySQL Workbench
