@@ -119,17 +119,17 @@ VMware Player
 * `chmod a+x ./VMware-Player-14.1.1-7528167.x86_64.bundle`
 * `sudo ./VMware-Player-14.1.1-7528167.x86_64.bundle`
 
-Setting Up Aliases and Functions
+Setting Up Aliases, Functions, and Environment Variables
 ----
-The `.bashrc` file is where you can set aliases and functions to be used within Linux.
+The `.bashrc` file is where you can set aliases, functions, and environment variables to be used within Linux.
 
 ### Editing the File
 `sudo nano ~/.bashrc`
 
 ### Example Aliases
-* `alias clr=clear`
-* `alias navd=cd ~`
-* `alias gm=git merge`
+* `alias clr='clear'`
+* `alias navd='cd ~'`
+* `alias gm='git merge'`
 
 ### Example Functions
 ```
@@ -139,3 +139,6 @@ rm -rf ./temp/*
 rm -rf ./work/*
 }
 ```
+
+### Example Environment Variables
+`export ANT_OPTS="-Xms256m -Xmx4g"`
