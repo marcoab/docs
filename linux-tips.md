@@ -52,7 +52,17 @@ If there is presence of OpenJDK, remove it:
 2. `sudo apt-get update`
 3. `sudo apt-get install oracle-java8-installer`
 
-### Install Alternatives for easy Java Switching
+### Install Java 7
+You will need to download a `.tar.gz` file of the JAVA JDK. e.g., jdk-7u80-linux-x64.tar.gz
+1. Move (or copy) the file into /var/cache/oracle-jdk7-installer
+`sudo mv jdk-7u80-linux-x64.tar.gz`
+2. Install the JDK using `apt`.
+`sudo apt install oracle-java7-installer`
+
+### Install Java 6
+<Placeholder>
+
+### Install a GUI for Alternatives (Easier Alternatives Switching)
 * `sudo apt install galternatives`
 
 Installing Git and Repos
@@ -65,13 +75,18 @@ Installing Git and Repos
 `ssh-keygen -t rsa -b 4096 -C "github@email.com"`
 
 ### Adding the SSH Key to Github
-1. `eval "$(ssh-agent -s"`
+1. `eval "$(ssh-agent -s)"`
 2. `ssh-add ~/.ssh/id_rsa`
 3. `xclip -sel clip < ~/.ssh/id_rsa.pub`
+4. Navigate to your github account > settings > add ssh or gpg keys
+5. Add new SSH key.
+6. Name it whatever you want.
+7. Paste in the contents you had clipped in step 3.
 
 ### Clone the Repo
 1) Navigate to where you want the repo.
 2) `git clone git@github.com:projectName/branch.git`
+Note: The path to the github project can be found on the project page, under the Clone or Download button.
 
 MySQL Sandbox Installation
 ----
@@ -148,3 +163,4 @@ rm -rf ./work/*
 
 ### Example Environment Variables
 `export ANT_OPTS="-Xms256m -Xmx4g"`
+`export JAVA_HOME="/path/to/java/home/jdk"`
