@@ -55,8 +55,10 @@ If there is presence of OpenJDK, remove it:
 ### Install Java 7
 You will need to download a `.tar.gz` file of the JAVA JDK. e.g., jdk-7u80-linux-x64.tar.gz
 1. Move (or copy) the file into /var/cache/oracle-jdk7-installer
+
 `sudo mv jdk-7u80-linux-x64.tar.gz`
 2. Install the JDK using `apt`.
+
 `sudo apt install oracle-java7-installer`
 
 ### Install Java 6
@@ -64,6 +66,8 @@ You will need to download a `.tar.gz` file of the JAVA JDK. e.g., jdk-7u80-linux
 
 ### Install a GUI for Alternatives (Easier Alternatives Switching)
 * `sudo apt install galternatives`
+
+The GUI should now be installed as 'Alternatives' under Applications.
 
 Installing Git and Repos
 ----
