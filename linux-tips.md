@@ -12,6 +12,10 @@ OS Setup
 
 `sudo apt-get update && sudo apt-get dist-upgrade`
 
+### Install Common Software Properties
+
+`sudo apt-get install software-properties-common python-software-properties`
+
 ### Installing .deb Files
 
 Ubuntu by itself locks down .deb files.  We will use gdebi to install .deb files.
