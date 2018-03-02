@@ -75,6 +75,13 @@ Install the JDK using `apt`.
 ### Install Java 6
 Placeholder text here.
 
+### Switching between Java Versions
+Check out [JDK-Switch](https://github.com/exela/jdk-switch)!
+
+or
+
+You can use alternatives.
+
 ### Install a GUI for Alternatives (Easier Alternatives Switching)
 * `sudo apt install galternatives`
 
