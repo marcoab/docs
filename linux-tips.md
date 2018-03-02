@@ -57,6 +57,8 @@ You will need to download a `.tar.gz` file of the JAVA JDK. e.g., jdk-7u80-linux
 1. Move (or copy) the file into /var/cache/oracle-jdk7-installer
 
 `sudo mv jdk-7u80-linux-x64.tar.gz`
+
+
 2. Install the JDK using `apt`.
 
 `sudo apt install oracle-java7-installer`
