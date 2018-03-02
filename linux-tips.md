@@ -54,17 +54,22 @@ If there is presence of OpenJDK, remove it:
 
 ### Install Java 7
 You will need to download a `.tar.gz` file of the JAVA JDK. e.g., jdk-7u80-linux-x64.tar.gz
-1. Move (or copy) the file into /var/cache/oracle-jdk7-installer
 
-`sudo mv jdk-7u80-linux-x64.tar.gz`
+Move (or copy) the file into `/var/cache/oracle-jdk7-installer`
+
+* `sudo mv jdk-7u80-linux-x64.tar.gz /var/cache/oracle-jdk7-installer`
+
+    or
+
+* `sudo cp jdk-7u80-linux-x64.tar.gz /var/cache/oracle-jdk7-installer`
 
 
-2. Install the JDK using `apt`.
+Install the JDK using `apt`.
 
-`sudo apt install oracle-java7-installer`
+* `sudo apt install oracle-java7-installer`
 
 ### Install Java 6
-<Placeholder>
+Placeholder text here.
 
 ### Install a GUI for Alternatives (Easier Alternatives Switching)
 * `sudo apt install galternatives`
@@ -92,6 +97,7 @@ Installing Git and Repos
 ### Clone the Repo
 1) Navigate to where you want the repo.
 2) `git clone git@github.com:projectName/branch.git`
+
 Note: The path to the github project can be found on the project page, under the Clone or Download button.
 
 MySQL Sandbox Installation
