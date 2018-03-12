@@ -54,6 +54,7 @@ PostgreSQL
 1. Open a command prompt and log into Postgres (psql.exe):
 
 `psql.exe --username=postgres`
+
 2. In the command prompt:
 
 `psql.exe --username=postgres (database-name) < FilePathToDump.dmp`
