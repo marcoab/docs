@@ -52,8 +52,10 @@ PostgreSQL
 
 ### Import a Dump
 1. Open a command prompt and log into Postgres (psql.exe):
+
 `psql.exe --username=postgres`
 2. In the command prompt:
+
 `psql.exe --username=postgres (database-name) < FilePathToDump.dmp`
 
 Some imports may fail based on how the export was created.  In this case, the following are some alternatives that can be used for import attempts.
@@ -66,4 +68,5 @@ pg_restore -U postgres -d dbname filename
 
 ### Create a Role
 During some imports, the logs may indicate that a role does not exist.  In this case, we will create a new role:
+
 `create role <role-name>;`
