@@ -40,6 +40,12 @@ In case the packet sizes are too small for the export to complete:
 
 Note: There is **no** space between the `-p` flag and the password.
 
+### Creating a User
+`CREATE USER 'userName'@'localhost' IDENTIFIED BY 'password';
+
+### Grant Privileges to User
+`GRANT ALL PRIVILEGES ON *.* TO 'userName'@'localhost' WITH GRANT OPTION;
+
 
 PostgreSQL
 -----
